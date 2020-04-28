@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+City.destroy_all
 
 delhi = City.create(
     name: "Delhi, India",
@@ -26,7 +26,7 @@ london = City.create(
 losAngeles = City.create(
     name: "Los Angeles,USA",
     longitude: 34.0522,
-    latitude: 118.2437,
+    latitude: -118.2437,
     measures: "For the duration of 39 days, LA prohibited large gatherings (50 or more people). People were encouraged to partake in solitary outdoor activities and limit their outings to necessary errands(i.e. grocery shopping, medical emergencies).",
     percent_reduction: -31, 
 )
@@ -34,7 +34,7 @@ losAngeles = City.create(
 madrid = City.create(
     name: "Madrid,Spain",
     longitude: 40.4168,
-    latitude: 3.7038,
+    latitude: -3.7038,
     measures: "For the duration of 45 days, all non-essential businesses were shut down nationwide. Factories halted nonessential production. All outdoor activities were banned and parks were closed.", 
     percent_reduction: -11, 
 )
@@ -50,7 +50,7 @@ mumbai = City.create(
 nyc = City.create(
     name: "New York City, USA",
     longitude: 40.7128,
-    latitude: 74.0060,
+    latitude: -74.0060,
     measures:"For the duration of 36 days, NY prohibited large gatherings (50 or more people). People were encouraged to partake in solitary outdoor activities and limit their outings to necessary errands(i.e. grocery shopping, medical emergencies).",
     percent_reduction: -25, 
 )
@@ -65,8 +65,8 @@ rome = City.create(
 
 saoPaulo = City.create(
     name: "Sao Paulo, Brazil",
-    longitude: 23.5505, 
-    latitude: 46.6333,
+    longitude: -23.5505, 
+    latitude: -46.6333,
     measures: "For the duration of 35 days, all non-esential busineses, public transporation and schools were shut down.",
     percent_reduction: -32, 
 )
